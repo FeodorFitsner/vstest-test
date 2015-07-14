@@ -1,4 +1,5 @@
 ﻿using System;
+﻿using System.Globalization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace vstest_tests
@@ -16,10 +17,9 @@ namespace vstest_tests
         [TestMethod] 
         public void TestMethod_IsNumeric3_true_Allow_decimal_white() 
         { 
-          const string source = "1234,56"; 
-          const NumberStyles numberStyle = NumberStyles.AllowDecimalPoint; 
-          const bool expected = true; 
-          bool result = StringFunc.IsNumeric3(source, numberStyle); 
+          const string source = "1234,56";
+          var result = Decimal.Parse(source);
+          var expected = 1234.56M;
           Assert.AreEqual(result, expected); 
         }        
     }
