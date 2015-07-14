@@ -18,9 +18,9 @@ namespace vstest_tests
         public void TestMethod_IsNumeric3_true_Allow_decimal_white() 
         { 
           const string source = "1234,56";
-          var result = Decimal.Parse(source);
+          var actual = Decimal.Parse(source);
           var expected = 1234.56M;
-          Assert.AreEqual(result, expected); 
+          Assert.AreEqual(expected, actual); 
         }        
     }
 }
