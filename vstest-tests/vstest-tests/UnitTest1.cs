@@ -13,4 +13,14 @@ namespace vstest_tests
             Assert.AreEqual(4, a);
         }
     }
+    
+    [TestMethod] 
+    public void TestMethod_IsNumeric3_true_Allow_decimal_white() 
+    { 
+      const string source = "1234,56"; 
+      const NumberStyles numberStyle = NumberStyles.AllowDecimalPoint; 
+      const bool expected = true; 
+      bool result = StringFunc.IsNumeric3(source, numberStyle); 
+      Assert.AreEqual(result, expected); 
+    }    
 }
