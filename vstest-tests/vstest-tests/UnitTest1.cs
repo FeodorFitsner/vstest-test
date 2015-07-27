@@ -8,6 +8,13 @@ namespace vstest_tests
     public class UnitTest1
     {
         [TestMethod]
+        public void Test_de_ch_locale_decimal()
+        {
+            CultureInfo info = new CultureInfo("de-CH");
+            var d = System.Convert.ToDecimal("1.0", info);
+        }
+        
+        [TestMethod]
         public void TestMethod1()
         {
             var a = 4;
