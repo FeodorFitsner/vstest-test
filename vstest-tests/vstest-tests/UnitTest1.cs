@@ -17,8 +17,8 @@ namespace vstest_tests
         [TestMethod]
         public void TestMethod1()
         {
-            var a = 4;
-            Assert.AreEqual(4, a);
+            var a = 5;
+            Assert.AreEqual(5, a);
         }
         
         [TestMethod] 
