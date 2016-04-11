@@ -1,5 +1,6 @@
-os: test-vs2013-hyperv
+#os: test-vs2013-hyperv
 #os: Visual Studio 2015
+os: test
 version: 1.0.{build}
 
 install:
