@@ -4,5 +4,5 @@ version: 1.0.{build}
 
 install:
 - ps: Set-Culture fr-FR
-#- set PATH=C:\Program Files (x86)\MSBuild\12.0\Bin;%PATH%
-#- set PATH=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow;%PATH%
+- set PATH=C:\Program Files (x86)\MSBuild\12.0\Bin;%PATH%
+- set PATH=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow;%PATH%
